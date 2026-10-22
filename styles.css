@@ -405,6 +405,8 @@ body.theme-native .hero-visual {
   color: var(--ink);
   box-shadow: 13px 15px 0 rgba(66, 125, 91, .16);
 }
+body.theme-native .flow-label { color: var(--lime); }
+body.theme-native .system-core { background: #0b1a2b; color: var(--ink); }
 body.theme-native .hero-visual::before {
   background-image: linear-gradient(rgba(222, 235, 243, .05) 1px, transparent 1px), linear-gradient(90deg, rgba(222, 235, 243, .05) 1px, transparent 1px);
   background-size: 25px 25px;
@@ -465,7 +467,7 @@ body.theme-native .intro-band {
 }
 body.theme-native .intro-band p:first-child { color: var(--ink-soft); }
 body.theme-native .intro-band p:last-child { color: var(--lime); font-weight: 700; }
-body.theme-native .service-grid { border-color: var(--line); }
+body.theme-native .service-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); border-color: var(--line); }
 body.theme-native .service-card {
   position: relative;
   display: flex;
@@ -603,6 +605,7 @@ body.theme-native .footer-meta a { color: var(--lime); }
   body.theme-native .hero-visual { padding: 20px; }
   body.theme-native .geo-stage { min-height: 195px; padding-right: 7px; padding-left: 7px; }
   body.theme-native .geo-stage strong { font-size: 10px; }
+  body.theme-native .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body.theme-native .service-card { min-height: 410px; }
   body.theme-native .method-path { padding: 22px; }
 }
