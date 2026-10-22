@@ -1,6 +1,6 @@
-# Pallas AI / 智神
+# 智神 AI
 
-智神 Pallas AI 的首页与战略笔记网站。
+智神 AI 官方网站，呈现 AI Native 咨询服务与行业项目经验。
 
 ## 本地预览
 
@@ -9,6 +9,9 @@ npm install
 npm run dev
 ```
 
-## GitHub Pages
+## Cloudflare Pages
 
-推送到 `main` 后，GitHub Actions 会构建 `dist` 并发布到 GitHub Pages。仓库可以保持私有，Pages 站点保持公开访问。
+将 GitHub 仓库连接到 Cloudflare Pages，并使用以下构建设置：
+
+- 构建命令：`npm run build`
+- 输出目录：`dist`
