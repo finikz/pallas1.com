@@ -120,18 +120,6 @@ h1, h2, h3, h4, p { margin-top: 0; }
 .geo-link { padding: 11px 0; border-bottom: 1px solid rgba(242,241,233,.7); white-space: nowrap; font-size: 11px; }
 .geo-link span { margin-left: 12px; color: var(--lime); }
 
-.method-section { background: var(--paper-dark); }
-.method-inner { padding-top: 108px; padding-bottom: 100px; }
-.method-head { margin-bottom: 43px; }
-.method-steps { border-top: 1px solid var(--line); }
-.method-step { display: grid; grid-template-columns: 68px 1fr 130px; align-items: center; gap: 22px; min-height: 96px; border-bottom: 1px solid var(--line); }
-.method-step > span { color: var(--coral); font-family: Georgia, serif; font-size: 14px; }
-.method-step h3 { margin: 0 0 3px; font-family: var(--display); font-size: 19px; font-weight: 600; }
-.method-step p { margin: 0; color: var(--ink-soft); font-size: 12px; }
-.method-step small { justify-self: end; color: var(--teal); font-family: Georgia, serif; font-size: 8px; letter-spacing: .15em; }
-.method-principle { display: flex; align-items: center; gap: 12px; margin: 26px 0 0; font-family: var(--display); font-size: 16px; }
-.method-principle span { color: var(--coral); font-family: sans-serif; }
-
 .foundation { padding-bottom: 120px; }
 .foundation-head { margin-bottom: 45px; }
 .legacy-stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
@@ -266,13 +254,6 @@ h1, h2, h3, h4, p { margin-top: 0; }
   .geo-copy h3 { font-size: 20px; }
   .geo-copy > p:last-child { font-size: 11px; }
   .geo-link { grid-column: 2; justify-self: start; font-size: 10px; }
-  .method-inner { padding-top: 76px; padding-bottom: 75px; }
-  .method-step { grid-template-columns: 35px 1fr; gap: 12px; min-height: 91px; }
-  .method-step > span { align-self: start; padding-top: 20px; }
-  .method-step small { display: none; }
-  .method-step h3 { font-size: 18px; }
-  .method-step p { max-width: 420px; font-size: 11px; }
-  .method-principle { font-size: 14px; }
   .foundation { padding-bottom: 80px; }
   .legacy-stats { grid-template-columns: repeat(2, 1fr); }
   .legacy-stats > div { min-height: 105px; padding: 14px; border-bottom: 1px solid var(--line); }
@@ -509,20 +490,6 @@ body.theme-native .service-card li::before { background: var(--coral); }
 body.theme-native .service-cta { display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; margin-top: 14px; padding-bottom: 4px; border-bottom: 1px solid rgba(222, 235, 243, .58); font-size: 10px; font-weight: 700; }
 body.theme-native .service-cta span { color: var(--lime); font-size: 14px; }
 
-body.theme-native .method-section { position: relative; overflow: hidden; background: #0e1c2c; }
-body.theme-native .method-section::before {
-  position: absolute;
-  top: 65px;
-  right: -135px;
-  width: 330px;
-  height: 330px;
-  border: 1px solid rgba(146, 223, 73, .11);
-  border-radius: 50%;
-  box-shadow: 0 0 0 28px rgba(146, 223, 73, .025), 0 0 0 66px rgba(146, 223, 73, .02);
-  content: "";
-  pointer-events: none;
-}
-body.theme-native .method-inner { position: relative; z-index: 1; }
 body.theme-native .method-paths { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 body.theme-native .method-path { min-height: 242px; padding: 25px; border: 1px solid var(--line); background: #14273a; }
 body.theme-native .method-path-geo { background: linear-gradient(135deg, #1b3442, #14273a); }
@@ -535,9 +502,6 @@ body.theme-native .method-path > p { max-width: 470px; margin: 18px 0; color: va
 body.theme-native .path-flow { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 body.theme-native .path-flow span { padding: 6px 9px; border: 1px solid rgba(222, 235, 243, .24); background: rgba(7, 17, 30, .55); color: var(--ink); font-size: 9px; }
 body.theme-native .path-flow i { color: var(--coral); font-size: 12px; font-style: normal; }
-body.theme-native .method-principle { color: var(--ink-soft); }
-body.theme-native .method-principle span { color: var(--coral); }
-
 body.theme-native .legacy-stats { border-color: rgba(146, 223, 73, .55); background: rgba(19, 40, 58, .54); }
 body.theme-native .legacy-stats > div { border-color: var(--line); }
 body.theme-native .legacy-stats strong span { color: var(--teal); }
