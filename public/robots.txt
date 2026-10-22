@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pallas1.com/sitemap.xml
