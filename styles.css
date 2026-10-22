@@ -467,7 +467,7 @@ body.theme-native .intro-band {
 }
 body.theme-native .intro-band p:first-child { color: var(--ink-soft); }
 body.theme-native .intro-band p:last-child { color: var(--lime); font-weight: 700; }
-body.theme-native .service-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); border-color: var(--line); }
+body.theme-native .service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); border-color: var(--line); }
 body.theme-native .service-card {
   position: relative;
   display: flex;
