@@ -510,12 +510,12 @@ body.theme-native .globalization-item p { margin: 0; color: #bdcbd4; font-size: 
 body.theme-native .globalization-foot { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(222, 235, 243, .18); }
 body.theme-native .globalization-foot span { color: var(--lime); font-family: Georgia, serif; font-size: 8px; letter-spacing: .15em; }
 body.theme-native .globalization-foot p { margin: 0; color: #aebec8; font-size: 10px; }
-body.theme-native .contact-methods { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: min(100%, 390px); }
-body.theme-native .contact-method { display: grid; min-height: 112px; align-content: center; gap: 7px; padding: 15px 17px; border: 1px solid rgba(222, 235, 243, .3); background: rgba(7, 17, 30, .34); transition: background .2s ease, transform .2s ease; }
-body.theme-native .contact-method:hover { transform: translateY(-2px); background: rgba(7, 17, 30, .55); }
-body.theme-native .contact-method small { color: #c0ccd4; font-family: Georgia, serif; font-size: 8px; letter-spacing: .08em; }
-body.theme-native .contact-method strong { color: var(--lime); font-family: Georgia, var(--display); font-size: 15px; letter-spacing: .02em; }
-body.theme-native .contact-method span { color: #d3dce2; font-size: 9px; }
+body.theme-native .contact-methods { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr; gap: 10px; width: min(100%, 460px); }
+body.theme-native .contact-method { display: grid; min-height: 154px; align-content: center; gap: 10px; padding: 23px 25px; border: 1px solid var(--lime); background: var(--lime); color: #0a1524; transition: background .2s ease, transform .2s ease; }
+body.theme-native .contact-method:hover { transform: translateY(-2px); background: #aff35c; }
+body.theme-native .contact-method small { color: #365222; font-family: Georgia, serif; font-size: 10px; letter-spacing: .08em; }
+body.theme-native .contact-method strong { color: #0a1524; font-family: Georgia, var(--display); font-size: 25px; letter-spacing: .02em; }
+body.theme-native .contact-method span { color: #243d16; font-size: 11px; }
 
 body.theme-native .implementation { background: #0e1b2a; border-top: 1px solid rgba(222, 235, 243, .1); border-bottom: 1px solid rgba(222, 235, 243, .1); }
 body.theme-native .implementation-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0; padding: 0; border: 1px solid var(--line); background: #101f31; list-style: none; }
