@@ -191,6 +191,9 @@ h1, h2, h3, h4, p { margin-top: 0; }
 @media (max-width: 1050px) {
   .hero { grid-template-columns: 1fr 1fr; padding-right: 6vw; padding-left: 6vw; }
   .hero h1 { font-size: clamp(38px, 4.6vw, 60px); }
+  body.theme-native .hero-title-break,
+  body.theme-native .ai-native-title-break { display: block; }
+  body.theme-native .visual-coordinate { display: none; }
   .hero-visual { min-height: 430px; }
   .flow-map { min-height: 337px; }
   .section { padding-right: 6vw; padding-left: 6vw; }
@@ -231,13 +234,13 @@ h1, h2, h3, h4, p { margin-top: 0; }
   .visual-footline { font-size: 6px; }
   .visual-coordinate { right: -22px; bottom: 90px; font-size: 7px; }
   .hero-bottom { right: 22px; bottom: 20px; left: 22px; font-size: 9px; }
-  .hero-bottom-right { font-size: 6px; }
+  .hero-bottom-right { font-size: 7px; letter-spacing: .08em; }
   .intro-band { min-height: 126px; flex-direction: column; gap: 5px; padding: 24px 19px; }
   .intro-band p { font-size: 19px; }
   .section { padding: 76px 22px; }
   .section-head { grid-template-columns: 1fr; gap: 18px; margin-bottom: 32px; }
   .section-head h2 { font-size: clamp(38px, 10vw, 53px); }
-  .section-intro { font-size: 12px; }
+  .section-intro { font-size: 13px; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
   .service-card { min-height: 310px; padding: 18px 14px; }
   .card-kicker { margin-top: 14px; font-size: 7px; }
@@ -283,6 +286,8 @@ h1, h2, h3, h4, p { margin-top: 0; }
 
 @media (max-width: 380px) {
   .hero h1 { font-size: clamp(38px, 10vw, 53px); }
+  .section-head h2 { font-size: clamp(32px, 9.5vw, 36px); }
+  body.theme-native .geo-title-break { display: block; }
   .hero-visual { min-height: 375px; }
   .flow-map { min-height: 294px; }
   .experience-nodes span, .output-nodes span { padding: 4px 7px; font-size: 8px; }
@@ -613,7 +618,7 @@ body.theme-native .footer-meta a { color: var(--lime); }
   body.theme-native .geo-stage { min-height: 195px; padding-right: 7px; padding-left: 7px; }
   body.theme-native .geo-stage strong { font-size: 10px; }
   body.theme-native .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  body.theme-native .service-card { min-height: 410px; }
+  body.theme-native .service-card { min-height: 365px; }
   body.theme-native .ai-native-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body.theme-native .method-path { padding: 22px; }
   body.theme-native .implementation-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -638,14 +643,17 @@ body.theme-native .footer-meta a { color: var(--lime); }
   body.theme-native .geo-stage strong { grid-column: 2; grid-row: 2; font-size: 12px; }
   body.theme-native .geo-stage small { grid-column: 2; grid-row: 3; margin: 1px 0 0; font-size: 9px; }
   body.theme-native .geo-stage-arrow { transform: rotate(90deg); line-height: 1; }
-  body.theme-native .visual-footline { font-size: 7px; }
+  body.theme-native .visual-footline { font-size: 8px; letter-spacing: .08em; }
   body.theme-native .hero-bottom { right: 22px; left: 22px; }
-  body.theme-native .service-card { min-height: 405px; padding: 18px 14px; }
+  body.theme-native .hero-bottom-right { font-size: 7px; }
+  body.theme-native .service-card { min-height: 365px; padding: 18px 14px; }
   body.theme-native .service-illustration { width: 48px; height: 48px; }
-  body.theme-native .card-kicker { margin-top: 14px; font-size: 6px; }
+  body.theme-native .card-kicker { margin-top: 14px; font-size: 7px; }
   body.theme-native .service-card h3 { font-size: 19px; }
-  body.theme-native .service-card > p:not(.card-kicker) { min-height: 96px; font-size: 11px; }
-  body.theme-native .service-card li { font-size: 9px; }
+  body.theme-native .service-card > p:not(.card-kicker) { min-height: 96px; font-size: 12px; }
+  body.theme-native .service-card li { font-size: 10px; }
+  body.theme-native .globalization-item p { font-size: 12px; }
+  body.theme-native .case-list p { font-size: 11px; }
   body.theme-native .contact-methods { width: 100%; max-width: 420px; }
   body.theme-native .globalization-panel { padding: 23px 20px 18px; }
   body.theme-native .globalization-grid { grid-template-columns: 1fr; }
