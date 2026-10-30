@@ -489,6 +489,21 @@ body.theme-native .service-card li { color: var(--ink); }
 body.theme-native .service-card li::before { background: var(--coral); }
 body.theme-native .service-cta { display: inline-flex; align-items: center; gap: 12px; align-self: flex-start; margin-top: 14px; padding-bottom: 4px; border-bottom: 1px solid rgba(222, 235, 243, .58); font-size: 10px; font-weight: 700; }
 body.theme-native .service-cta span { color: var(--lime); font-size: 14px; }
+body.theme-native .globalization-panel { margin-top: 24px; padding: 32px 34px 24px; border: 1px solid rgba(146, 223, 73, .36); background: linear-gradient(118deg, #13283a 0%, #101f31 58%, #0e1b2a 100%); }
+body.theme-native .globalization-head { display: grid; grid-template-columns: .8fr 1.2fr; align-items: end; gap: 38px; padding-bottom: 23px; border-bottom: 1px solid var(--line); }
+body.theme-native .globalization-kicker { margin: 0 0 10px; color: var(--lime); font-family: Georgia, serif; font-size: 8px; letter-spacing: .15em; }
+body.theme-native .globalization-head h3 { margin: 0; font-family: var(--display); font-size: clamp(24px, 2.8vw, 34px); font-weight: 600; line-height: 1.35; }
+body.theme-native .globalization-head > p { max-width: 630px; margin: 0; color: #c0ccd4; font-size: 12px; line-height: 1.9; }
+body.theme-native .globalization-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 23px; }
+body.theme-native .globalization-item { min-height: 119px; padding: 0 24px; border-right: 1px solid var(--line); }
+body.theme-native .globalization-item:first-child { padding-left: 0; }
+body.theme-native .globalization-item:last-child { padding-right: 0; border-right: 0; }
+body.theme-native .globalization-item > span { color: var(--coral); font-family: Georgia, serif; font-size: 7px; letter-spacing: .12em; }
+body.theme-native .globalization-item h4 { margin: 10px 0 6px; font-family: var(--display); font-size: 17px; font-weight: 600; }
+body.theme-native .globalization-item p { margin: 0; color: #bdcbd4; font-size: 11px; line-height: 1.8; }
+body.theme-native .globalization-foot { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(222, 235, 243, .18); }
+body.theme-native .globalization-foot span { color: var(--lime); font-family: Georgia, serif; font-size: 8px; letter-spacing: .15em; }
+body.theme-native .globalization-foot p { margin: 0; color: #aebec8; font-size: 10px; }
 
 body.theme-native .implementation { background: #0e1b2a; border-top: 1px solid rgba(222, 235, 243, .1); border-bottom: 1px solid rgba(222, 235, 243, .1); }
 body.theme-native .implementation-steps { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 0; padding: 0; border: 1px solid var(--line); background: #101f31; list-style: none; }
@@ -596,6 +611,7 @@ body.theme-native .footer-meta a { color: var(--lime); }
   body.theme-native .geo-stage strong { font-size: 10px; }
   body.theme-native .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body.theme-native .service-card { min-height: 410px; }
+  body.theme-native .globalization-head { grid-template-columns: 1fr 1fr; gap: 24px; }
   body.theme-native .method-path { padding: 22px; }
   body.theme-native .implementation-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   body.theme-native .implementation-step { min-height: 230px; border-bottom: 1px solid var(--line); }
@@ -628,6 +644,14 @@ body.theme-native .footer-meta a { color: var(--lime); }
   body.theme-native .service-card h3 { font-size: 19px; }
   body.theme-native .service-card > p:not(.card-kicker) { min-height: 96px; font-size: 11px; }
   body.theme-native .service-card li { font-size: 9px; }
+  body.theme-native .globalization-panel { padding: 23px 20px 18px; }
+  body.theme-native .globalization-head { grid-template-columns: 1fr; gap: 13px; }
+  body.theme-native .globalization-grid { grid-template-columns: 1fr; margin-top: 8px; }
+  body.theme-native .globalization-item,
+  body.theme-native .globalization-item:first-child,
+  body.theme-native .globalization-item:last-child { min-height: 0; padding: 16px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  body.theme-native .globalization-item:last-child { border-bottom: 0; }
+  body.theme-native .globalization-foot { align-items: flex-start; flex-direction: column; gap: 8px; }
   body.theme-native .service-cta { font-size: 9px; }
   body.theme-native .method-paths { grid-template-columns: 1fr; }
   body.theme-native .method-path { min-height: 0; padding: 21px 18px; }
