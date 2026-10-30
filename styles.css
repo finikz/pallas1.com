@@ -370,7 +370,6 @@ body.theme-native .section-head h2 em { color: var(--teal); }
 body.theme-native #ai-native .section-head h2 em,
 body.theme-native #geo .section-head h2 em,
 body.theme-native #globalization .section-head h2 em { color: var(--lime); }
-body.theme-native .heading-en { display: block; margin-bottom: 5px; font-size: .36em; font-weight: 600; letter-spacing: 0; line-height: 1.35; white-space: nowrap; }
 body.theme-native .hero-lede,
 body.theme-native .hero-note,
 body.theme-native .hero-bottom { color: var(--ink-soft); }
