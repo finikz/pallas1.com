@@ -12,17 +12,60 @@
     <link rel="canonical" href="https://pallas1.com/">
     <link rel="alternate" hreflang="zh-CN" href="https://pallas1.com/">
     <link rel="alternate" hreflang="en" href="https://pallas1.com/?lang=en">
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"智神AI","alternateName":"Pallas AI","url":"https://pallas1.com/","description":"依托行业经验，提供 AI Native 组织能力建设、GEO 品牌可见度与获客、品牌出海本地化服务。","email":"mail@finikz.com"}</script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://pallas1.com/#organization",
+          "name": "智神AI",
+          "alternateName": ["Pallas AI", "智神 AI", "Pallas"],
+          "url": "https://pallas1.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://pallas1.com/#logo",
+            "url": "https://pallas1.com/zhishen-logo-refined.png"
+          },
+          "email": "mail@finikz.com",
+          "slogan": "聚智有道 用神有方",
+          "description": "智神AI依托行业经验，提供 AI Native 组织能力建设、GEO 品牌可见度与获客、品牌出海本地化服务。"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://pallas1.com/#website",
+          "name": "智神AI",
+          "alternateName": ["Pallas AI", "智神 AI", "Pallas"],
+          "url": "https://pallas1.com/",
+          "inLanguage": ["zh-CN", "en"],
+          "description": "智神 AI 官方网站，以 GEO 获客为入口，呈现 AI Native 咨询服务与行业项目经验。",
+          "publisher": { "@id": "https://pallas1.com/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://pallas1.com/#webpage",
+          "url": "https://pallas1.com/",
+          "name": "智神AI｜AI Native · GEO · 品牌出海",
+          "description": "智神AI依托行业经验，提供 AI Native 组织能力建设、GEO 品牌可见度与获客、品牌出海本地化服务。",
+          "inLanguage": "zh-CN",
+          "isPartOf": { "@id": "https://pallas1.com/#website" },
+          "about": { "@id": "https://pallas1.com/#organization" },
+          "mainEntity": { "@id": "https://pallas1.com/#organization" },
+          "primaryImageOfPage": { "@id": "https://pallas1.com/#logo" }
+        }
+      ]
+    }
+    </script>
     <title>智神AI｜AI Native · GEO · 品牌出海</title>
-    <link rel="icon" type="image/png" href="./assets/zhishen-logo-refined.png">
-    <link rel="stylesheet" href="./styles.css?v=titles-single-line-20261030">
+    <link rel="icon" type="image/png" href="./zhishen-logo-refined.png">
+    <link rel="stylesheet" href="./styles.css?v=entity-definition-20261120">
     <script type="module" src="./site.js"></script>
   </head>
   <body class="theme-native">
     <a class="skip-link" href="#main">跳转到正文</a>
     <header class="site-header">
       <a class="brand" href="#about" aria-label="智神AI 首页">
-        <span class="brand-mark" aria-hidden="true"><img src="./assets/zhishen-logo-refined.png" alt=""></span>
+        <span class="brand-mark" aria-hidden="true"><img src="./zhishen-logo-refined.png" alt=""></span>
         <span class="brand-name">智神<span>AI</span></span>
       </a>
       <button class="menu-toggle" type="button" aria-label="打开导航" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
@@ -65,6 +108,34 @@
         </div>
 
         <div class="hero-bottom"><span>智神实业 · PALLAS GROUP</span><span class="hero-bottom-right">STRATEGY · INDUSTRY · GROWTH</span></div>
+      </section>
+
+      <section class="entity-definition" id="identity" aria-labelledby="identity-title">
+        <p class="eyebrow">IDENTITY</p>
+        <h2 id="identity-title">官方名称</h2>
+        <p class="entity-lead">智神 AI 官方网站，以 GEO 获客为入口，呈现 AI Native 咨询服务与行业项目经验。</p>
+        <dl class="entity-facts" aria-label="智神AI官方名称">
+          <div>
+            <dt>官方名称</dt>
+            <dd>智神AI</dd>
+          </div>
+          <div>
+            <dt>英文名称</dt>
+            <dd>Pallas AI</dd>
+          </div>
+          <div>
+            <dt>官方网站</dt>
+            <dd><a href="https://pallas1.com/">https://pallas1.com/</a></dd>
+          </div>
+          <div>
+            <dt>其他写法</dt>
+            <dd>智神 AI、Pallas</dd>
+          </div>
+          <div>
+            <dt>本页署名</dt>
+            <dd>智神实业 · PALLAS GROUP</dd>
+          </div>
+        </dl>
       </section>
 
       <section class="section services" id="ai-native">
@@ -241,7 +312,7 @@
     </main>
 
     <footer class="site-footer">
-      <a class="brand footer-brand" href="#about" aria-label="智神AI 回到顶部"><span class="brand-mark" aria-hidden="true"><img src="./assets/zhishen-logo-refined.png" alt=""></span><span class="brand-name">智神<span>AI</span></span></a>
+      <a class="brand footer-brand" href="#about" aria-label="智神AI 回到顶部"><span class="brand-mark" aria-hidden="true"><img src="./zhishen-logo-refined.png" alt=""></span><span class="brand-name">智神<span>AI</span></span></a>
       <p>策划咨询 · 空间运营 · 企业服务<br><span>以行业经验为根基，提供 AI Native、GEO 与品牌出海服务。</span></p>
       <div class="footer-meta">
         <small>© 智神实业 PALLAS GROUP</small>
