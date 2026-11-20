@@ -20,6 +20,7 @@ const ariaTranslations = {
   "合作品牌与生态伙伴": "Partners and ecosystem",
   "智神AI电话与微信联系方式": "Contact Pallas AI by phone or WeChat",
   "智神AI 回到顶部": "Pallas AI back to top",
+  "智神AI官方名称": "Pallas AI official names",
 };
 
 const ariaNodes = [...document.querySelectorAll("[aria-label]")].map((element) => ({
@@ -43,10 +44,44 @@ const pageMeta = {
     ogTitle: "Pallas AI | AI Native · GEO · Brand Globalization",
     ogDescription: "Built on industry experience, Pallas AI helps organizations become AI Native, improve brand visibility in AI search, and localize for global markets.",
     url: "https://pallas1.com/?lang=en",
+    websiteDescription: "The official Pallas AI website. It leads with GEO customer acquisition and presents AI Native consulting and industry project experience.",
+    slogan: "Ideas into action",
+    alternateName: ["智神AI", "智神 AI", "Pallas"],
   },
 };
 
-const structuredData = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);
+const structuredDataScript = document.querySelector('script[type="application/ld+json"]');
+const structuredDataZh = structuredDataScript.textContent;
+let structuredData = JSON.parse(structuredDataZh);
+
+function graphNode(type) {
+  return structuredData["@graph"].find((node) => node["@type"] === type);
+}
+
+function applyStructuredData(isEnglish) {
+  if (!isEnglish) {
+    structuredData = JSON.parse(structuredDataZh);
+    structuredDataScript.textContent = structuredDataZh;
+    return;
+  }
+
+  const metadata = pageMeta.en;
+  const organization = graphNode("Organization");
+  const website = graphNode("WebSite");
+  const page = graphNode("WebPage");
+  organization.name = "Pallas AI";
+  organization.alternateName = metadata.alternateName;
+  organization.description = metadata.description;
+  organization.slogan = metadata.slogan;
+  website.name = "Pallas AI";
+  website.alternateName = metadata.alternateName;
+  website.description = metadata.websiteDescription;
+  page.url = metadata.url;
+  page.name = metadata.title;
+  page.description = metadata.description;
+  page.inLanguage = metadata.lang;
+  structuredDataScript.textContent = JSON.stringify(structuredData);
+}
 let activeLanguage = false;
 
 function keepWhitespace(original, replacement) {
@@ -96,11 +131,7 @@ function applyLanguage(isEnglish) {
     languageSwitch.setAttribute("aria-label", isEnglish ? "View the Chinese site" : "切换到英文");
   }
 
-  structuredData.name = isEnglish ? "Pallas AI" : "智神AI";
-  structuredData.alternateName = isEnglish ? "智神AI" : "Pallas AI";
-  structuredData.description = metadata.description;
-  structuredData.url = metadata.url;
-  document.querySelector('script[type="application/ld+json"]').textContent = JSON.stringify(structuredData);
+  applyStructuredData(isEnglish);
   updateMenuLabel();
 }
 
