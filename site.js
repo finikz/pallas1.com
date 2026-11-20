@@ -20,7 +20,6 @@ const ariaTranslations = {
   "合作品牌与生态伙伴": "Partners and ecosystem",
   "智神AI电话与微信联系方式": "Contact Pallas AI by phone or WeChat",
   "智神AI 回到顶部": "Pallas AI back to top",
-  "智神AI官方名称": "Pallas AI official names",
 };
 
 const ariaNodes = [...document.querySelectorAll("[aria-label]")].map((element) => ({
