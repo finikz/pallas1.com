@@ -83,17 +83,6 @@ h1, h2, h3, h4, p { margin-top: 0; }
 .hero-bottom { position: absolute; right: clamp(24px, 8vw, 130px); bottom: 22px; left: clamp(24px, 8vw, 130px); display: flex; justify-content: space-between; padding-top: 13px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 10px; letter-spacing: .08em; }
 .hero-bottom-right { font-family: Georgia, serif; font-size: 8px; letter-spacing: .16em; }
 
-.entity-definition { padding: 56px clamp(24px, 8vw, 130px); border-top: 1px solid var(--line); }
-.entity-definition .eyebrow { margin-bottom: 12px; color: var(--teal); }
-.entity-definition h2 { margin: 0 0 14px; font-family: var(--display); font-size: clamp(32px, 4vw, 48px); font-weight: 500; letter-spacing: -.04em; line-height: 1.2; }
-.entity-lead { max-width: 640px; margin: 0; color: var(--ink-soft); font-size: 14px; line-height: 1.9; }
-.entity-facts { max-width: 760px; margin: 22px 0 0; border-top: 1px solid var(--line); }
-.entity-facts > div { display: grid; grid-template-columns: minmax(108px, 160px) minmax(0, 1fr); gap: 12px 20px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--line); }
-.entity-facts dt { margin: 0; color: var(--teal); font-family: Georgia, serif; font-size: 10px; font-weight: 600; letter-spacing: .14em; }
-.entity-facts dd { margin: 0; font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
-.entity-facts a { border-bottom: 1px solid currentColor; }
-.entity-relation { max-width: 760px; margin: 0; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 15px; line-height: 1.5; overflow-wrap: anywhere; }
-
 .intro-band { display: flex; min-height: 150px; align-items: center; justify-content: center; gap: clamp(12px, 3vw, 50px); padding: 32px 24px; background: var(--teal); color: var(--paper); text-align: center; }
 .intro-band p { margin: 0; font-family: var(--display); font-size: clamp(18px, 2.2vw, 27px); }
 .intro-band p:first-child { color: rgba(242,241,233,.72); }
@@ -245,8 +234,6 @@ h1, h2, h3, h4, p { margin-top: 0; }
   .visual-coordinate { right: -22px; bottom: 90px; font-size: 7px; }
   .hero-bottom { right: 22px; bottom: 20px; left: 22px; font-size: 9px; }
   .hero-bottom-right { font-size: 7px; letter-spacing: .08em; }
-  .entity-definition { padding: 40px 22px; }
-  .entity-facts > div { grid-template-columns: 1fr; gap: 4px; }
   .intro-band { min-height: 126px; flex-direction: column; gap: 5px; padding: 24px 19px; }
   .intro-band p { font-size: 19px; }
   .section { padding: 76px 22px; }
