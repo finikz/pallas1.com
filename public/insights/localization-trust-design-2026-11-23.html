@@ -10,7 +10,8 @@
   <meta property="og:url" content="https://pallas1.com/insights/localization-trust-design-2026-11-23.html">
   <link rel="canonical" href="https://pallas1.com/insights/localization-trust-design-2026-11-23.html">
   <link rel="icon" type="image/png" href="/zhishen-logo-refined.png">
-  <link rel="stylesheet" href="/insights/insights.css">
+  <link rel="stylesheet" href="/styles.css?v=insights-home-theme-20261123">
+  <link rel="stylesheet" href="/insights/insights.css?v=insights-home-theme-20261123">
   <title>品牌出海的本地化，正在从“翻译”走向“信任设计”｜智神AI</title>
   <script type="application/ld+json">
   {
@@ -27,18 +28,24 @@
   }
   </script>
 </head>
-<body>
+<body class="theme-native insight-page">
   <a class="skip-link" href="#main">跳转到正文</a>
-  <header class="insights-header">
-    <a class="brand" href="/" aria-label="智神AI 首页">
-      <span class="brand-mark"><img src="/zhishen-logo-refined.png" alt=""></span>
+    <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header">
+    <a class="brand" href="/#about" aria-label="智神AI 首页">
+      <span class="brand-mark" aria-hidden="true"><img src="/zhishen-logo-refined.png" alt=""></span>
       <span class="brand-name">智神<span>AI</span></span>
     </a>
-    <nav aria-label="主导航">
-      <a href="/">首页</a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="主导航">
+      <a href="/#about">关于智神</a>
+      <a href="/insights/" aria-current="page">市场洞察</a>
+      <a href="/#ai-native">AI Native</a>
+      <a href="/#geo">GEO</a>
       <a href="/#globalization">品牌出海</a>
-      <a class="current" href="/insights/">市场洞察 <span>INSIGHTS</span></a>
-      <a class="contact-link" href="/#contact">联系我们 ↗</a>
+      <a href="/#industry">行业经验</a>
+      <a class="nav-contact" href="/#contact">联系我们 <span aria-hidden="true">↗</span></a>
+      <a class="language-switch" href="/?lang=en" lang="en" aria-label="切换到英文">EN</a>
     </nav>
   </header>
 
@@ -123,5 +130,21 @@
   </main>
 
   <footer class="site-footer"><span>智神AI · PALLAS GROUP</span><a href="/">返回首页 ↑</a></footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const primaryNav = document.querySelector(".primary-nav");
+    menuButton?.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      primaryNav?.classList.toggle("is-open", !isOpen);
+    });
+    primaryNav?.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        menuButton?.setAttribute("aria-expanded", "false");
+        primaryNav.classList.remove("is-open");
+      }
+    });
+  </script>
 </body>
 </html>

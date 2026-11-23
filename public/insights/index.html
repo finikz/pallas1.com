@@ -3,38 +3,45 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="智神AI市场洞察：追踪中国品牌出海、本地内容传播、跨文化本地化与相关政策变化。">
+  <meta name="description" content="智神AI市场洞察：关注 AI Native、GEO、品牌出海，以及产业、空间与企业服务中的市场变化。">
   <meta property="og:type" content="website">
   <meta property="og:title" content="市场洞察 Insights｜智神AI">
-  <meta property="og:description" content="从真实案例和政策原文出发，观察品牌出海与跨文化本地化。">
+  <meta property="og:description" content="从真实案例、政策原文和客户问题出发，观察智神相关业务与市场变化。">
   <meta property="og:url" content="https://pallas1.com/insights/">
   <link rel="canonical" href="https://pallas1.com/insights/">
   <link rel="icon" type="image/png" href="/zhishen-logo-refined.png">
-  <link rel="stylesheet" href="/insights/insights.css">
-  <title>市场洞察 Insights｜品牌出海与本地化｜智神AI</title>
+  <link rel="stylesheet" href="/styles.css?v=insights-home-theme-20261123">
+  <link rel="stylesheet" href="/insights/insights.css?v=insights-home-theme-20261123">
+  <title>市场洞察 Insights｜智神AI</title>
 </head>
-<body>
-  <header class="insights-header">
-    <a class="brand" href="/" aria-label="智神AI 首页">
-      <span class="brand-mark"><img src="/zhishen-logo-refined.png" alt=""></span>
+<body class="theme-native insight-page">
+    <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header">
+    <a class="brand" href="/#about" aria-label="智神AI 首页">
+      <span class="brand-mark" aria-hidden="true"><img src="/zhishen-logo-refined.png" alt=""></span>
       <span class="brand-name">智神<span>AI</span></span>
     </a>
-    <nav aria-label="主导航">
-      <a href="/">首页</a>
+    <button class="menu-toggle" type="button" aria-label="打开导航" aria-controls="primary-nav" aria-expanded="false"><span></span><span></span></button>
+    <nav id="primary-nav" class="primary-nav" aria-label="主导航">
+      <a href="/#about">关于智神</a>
+      <a href="/insights/" aria-current="page">市场洞察</a>
+      <a href="/#ai-native">AI Native</a>
+      <a href="/#geo">GEO</a>
       <a href="/#globalization">品牌出海</a>
-      <a class="current" href="/insights/">市场洞察 <span>INSIGHTS</span></a>
-      <a class="contact-link" href="/#contact">联系我们 ↗</a>
+      <a href="/#industry">行业经验</a>
+      <a class="nav-contact" href="/#contact">联系我们 <span aria-hidden="true">↗</span></a>
+      <a class="language-switch" href="/?lang=en" lang="en" aria-label="切换到英文">EN</a>
     </nav>
   </header>
   <main class="insights-home">
     <section class="insights-hero">
       <p class="eyebrow">PALLAS AI <i>✳</i> MARKET INSIGHTS</p>
-      <h1>市场洞察<br><em>把出海问题放回真实市场</em></h1>
-      <p>跟踪中国品牌进入海外市场时的语言文化适配、本地内容传播、品牌定位与营销实践，以及影响市场进入的重要政策变化。以原始资料和可核实案例为起点，提炼能进入客户决策和服务设计的判断。</p>
-      <div class="insights-principles"><span>一手来源</span><span>市场语境</span><span>可执行启示</span></div>
+      <h1>市场洞察<br><em>连接智神业务与市场变化</em></h1>
+      <p>聚焦 AI Native、GEO、品牌出海，以及智神实业在产业、空间与企业服务中的实践。以一手资料、真实案例和客户问题为起点，持续形成对智神业务与客户决策有用的市场观察。</p>
+      <div class="insights-principles"><span>AI Native</span><span>GEO</span><span>品牌出海</span><span>行业实践</span></div>
     </section>
     <section class="insight-list" aria-labelledby="latest-title">
-      <div class="list-heading"><div><p class="section-kicker">LATEST / 01</p><h2 id="latest-title">最新观察</h2></div><span>BRAND GLOBALIZATION · LOCALIZATION</span></div>
+      <div class="list-heading"><div><p class="section-kicker">LATEST / 01</p><h2 id="latest-title">最新观察</h2></div><span>AI NATIVE · GEO · GLOBAL BRAND · INDUSTRY</span></div>
       <a class="insight-card" href="/insights/localization-trust-design-2026-11-23.html">
         <div class="card-date"><time datetime="2026-11-23">2026.11.23</time><span>本地化 / 跨文化传播</span></div>
         <div class="card-copy">
@@ -47,10 +54,26 @@
       </a>
     </section>
     <section class="insights-contact">
-      <div><p class="section-kicker">FROM INSIGHT TO ACTION</p><h2>把市场信号<br><em>转化为出海判断</em></h2></div>
+      <div><p class="section-kicker">FROM INSIGHT TO ACTION</p><h2>把市场信号<br><em>转化为业务判断</em></h2></div>
       <a href="/#contact">联系智神AI <span>↗</span></a>
     </section>
   </main>
   <footer class="site-footer"><span>智神AI · PALLAS GROUP</span><a href="/">返回首页 ↑</a></footer>
+
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const primaryNav = document.querySelector(".primary-nav");
+    menuButton?.addEventListener("click", () => {
+      const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!isOpen));
+      primaryNav?.classList.toggle("is-open", !isOpen);
+    });
+    primaryNav?.addEventListener("click", (event) => {
+      if (event.target.closest("a")) {
+        menuButton?.setAttribute("aria-expanded", "false");
+        primaryNav.classList.remove("is-open");
+      }
+    });
+  </script>
 </body>
 </html>
