@@ -33,8 +33,43 @@
             "url": "https://pallas1.com/zhishen-logo-refined.png"
           },
           "email": "mail@finikz.com",
+          "telephone": "+86-13751870325",
           "slogan": "聚智有道 用神有方",
-          "description": "智神AI依托行业经验，提供 AI Native 组织能力建设、GEO 品牌可见度与获客、品牌出海本地化服务。"
+          "description": "智神AI依托行业经验，提供 AI Native 组织能力建设、GEO 品牌可见度与获客、品牌出海本地化服务。",
+          "sameAs": [
+            "https://pallas1.com/insights/",
+            "https://github.com/finikz/pallas1.com"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "智神AI 核心服务",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "AI Native 组织能力建设",
+                  "description": "围绕 AI 的能力重新设计业务，从战略蓝图、知识系统沉淀到人机协同工作流智能体搭建。"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "GEO 生成式引擎优化",
+                  "description": "提高品牌在 ChatGPT、Perplexity、Gemini 等大模型中的可发现性、被引用概率与商业推荐。"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "品牌出海本地化",
+                  "description": "结合目标市场文化与消费习惯，适配品牌定位、产品呈现、多语内容表达与落地渠道。"
+                }
+              }
+            ]
+          }
         },
         {
           "@type": "WebSite",
@@ -57,6 +92,45 @@
           "about": { "@id": "https://pallas1.com/#organization" },
           "mainEntity": { "@id": "https://pallas1.com/#organization" },
           "primaryImageOfPage": { "@id": "https://pallas1.com/#logo" }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://pallas1.com/#faq",
+          "isPartOf": { "@id": "https://pallas1.com/#website" },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "AI Native 组织能力建设周期与交付方式？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "通常分为三个阶段：第一阶段（2-3周）梳理业务现状与建设蓝图；第二阶段（4-6周）沉淀业务经验与知识系统；第三阶段（4-8周）搭建场景智能体与协作工作流。我们采用敏捷迭代、伴随式交付，确保方案在真实业务中平滑落地。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "GEO（生成式引擎优化）与传统 SEO 有何核心区别？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "传统 SEO 侧重于针对搜索引擎的关键词抓取与外链权重；GEO（生成式引擎优化）则侧重于让大模型（如 ChatGPT、Perplexity、Gemini）准确理解品牌信息与权威信源，并在用户的生成式问答中被优先引用与主动推荐，建立面向 AI 时代的语义信任。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "品牌出海本地化支持哪些区域与行业？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "智神深度聚焦东南亚（马来西亚、新加坡等）以及欧美主流出海市场，覆盖跨境业务、消费品牌、产业园区与文化创意等领域，提供从本地文化适配、合规与营销渠道联结的全流程落地支持。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "合作初期如何启动与开展？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "你可以直接预约 20 分钟轻量业务诊断。双方梳理当前业务痛点与 AI/出海场景，我们在 1 个工作日内为你提供针对性的初步建议与可行合作路径。"
+              }
+            }
+          ]
         }
       ]
     }
@@ -81,6 +155,7 @@
         <a href="#geo">GEO</a>
         <a href="#globalization">品牌出海</a>
         <a href="#industry">行业经验</a>
+        <a href="#faq">常见问题</a>
         <a class="nav-contact" href="#contact">联系我们 <span aria-hidden="true">↗</span></a>
         <a class="language-switch" href="?lang=en" lang="en" aria-label="切换到英文">EN</a>
       </nav>
@@ -123,7 +198,11 @@
       <section class="market-insights-feature" id="market-insights" aria-label="市场洞察最新文章">
         <a class="market-insights-card" href="/insights/localization-trust-design-2026-11-23">
           <div class="market-insights-topline">
-            <p>市场洞察 · 第 01 期</p>
+            <div class="market-insights-badge">
+              <span class="insights-eyebrow">02 / MARKET INSIGHTS</span>
+              <span class="insights-divider" aria-hidden="true">·</span>
+              <span class="insights-issue">市场洞察 · 第 01 期</span>
+            </div>
             <span aria-hidden="true">✳</span>
           </div>
           <h2>品牌出海的本地化，<br>正在从“翻译”走向<span>“信任设计”</span></h2>
@@ -296,11 +375,66 @@
         </div>
       </section>
 
+      <section class="section faq-section" id="faq" aria-label="常见问题解答">
+        <div class="section-head">
+          <div><p class="eyebrow">07 / FAQ</p><h2>常见问题<br><em>解答你的业务疑虑</em></h2></div>
+          <p class="section-intro">从项目周期、GEO 原理到品牌出海服务模式，帮助你快速了解与智神 AI 的合作方式。</p>
+        </div>
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <h3>AI Native 组织能力建设周期与交付方式？</h3>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>通常分为三个阶段：第一阶段（2-3周）梳理业务现状与建设蓝图；第二阶段（4-6周）沉淀业务经验与知识系统；第三阶段（4-8周）搭建场景智能体与协作工作流。我们采用敏捷迭代、伴随式交付，确保方案在真实业务中平滑落地。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <h3>GEO（生成式引擎优化）与传统 SEO 有何核心区别？</h3>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>传统 SEO 侧重于针对搜索引擎的关键词抓取与外链权重；GEO（生成式引擎优化）则侧重于让大模型（如 ChatGPT、Perplexity、Gemini）准确理解品牌信息与权威信源，并在用户的生成式问答中被优先引用与主动推荐，建立面向 AI 时代的语义信任。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <h3>品牌出海本地化支持哪些区域与行业？</h3>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>智神深度聚焦东南亚（马来西亚、新加坡等）以及欧美主流出海市场，覆盖跨境业务、消费品牌、产业园区与文化创意等领域，提供从本地文化适配、合规与营销渠道联结的全流程落地支持。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <h3>合作初期如何启动与开展？</h3>
+              <span class="faq-toggle-icon" aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>你可以直接预约 20 分钟轻量业务诊断。双方梳理当前业务痛点与 AI/出海场景，我们在 1 个工作日内为你提供针对性的初步建议与可行合作路径。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
       <section class="closing" id="contact">
         <div class="closing-orbit" aria-hidden="true"><span></span><i></i><i></i><i></i></div>
-        <div class="closing-copy"><p class="eyebrow">07 / CONTACT PALLAS</p><h2>聊聊你的业务<br><em>一起找到下一步</em></h2><p>无论是 AI Native 建设、GEO，还是品牌出海本地化，欢迎从一个具体目标开始沟通。</p></div>
+        <div class="closing-copy"><p class="eyebrow">08 / CONTACT PALLAS</p><h2>聊聊你的业务<br><em>一起找到下一步</em></h2><p>无论是 AI Native 建设、GEO，还是品牌出海本地化，欢迎从一个具体目标开始沟通。</p></div>
         <div class="contact-methods" aria-label="智神AI电话、微信与邮箱联系方式">
-          <a class="contact-method" href="tel:13751870325"><small>Beto 罗先生</small><strong>13751870325</strong><span>电话 · 微信</span></a>
+          <div class="contact-card-primary">
+            <div class="contact-card-header">
+              <small>Beto 罗先生</small>
+              <span class="contact-badge">电话 · 微信同号</span>
+            </div>
+            <strong class="contact-phone-val">13751870325</strong>
+            <div class="contact-card-actions">
+              <a class="contact-action-btn" href="tel:13751870325">拨打电话 <span aria-hidden="true">↗</span></a>
+              <button class="contact-action-btn contact-btn-copy" type="button" data-copy="13751870325" aria-label="复制微信号 13751870325">复制微信号</button>
+            </div>
+          </div>
           <a class="contact-method contact-method-secondary" href="mailto:mail@finikz.com"><small>商务邮箱</small><strong>mail@finikz.com</strong><span>点击发送邮件 · 1 个工作日内回复</span></a>
         </div>
       </section>
