@@ -8,6 +8,7 @@ export const englishText = {
   "GEO": "GEO",
   "品牌出海": "Brand Globalization",
   "行业经验": "Industry Experience",
+  "市场洞察": "Insights",
   "联系我们": "Contact",
   "↗": "↗",
   "EN": "中文",
