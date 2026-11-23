@@ -18,7 +18,7 @@ const ariaTranslations = {
   "GEO 服务实施路径": "GEO delivery process",
   "智神历史业务规模": "Pallas project track record",
   "合作品牌与生态伙伴": "Partners and ecosystem",
-  "智神AI电话与微信联系方式": "Contact Pallas AI by phone or WeChat",
+  "智神AI电话、微信与邮箱联系方式": "Contact Pallas AI by phone, WeChat, or email",
   "智神AI 回到顶部": "Pallas AI back to top",
 };
 
@@ -108,6 +108,10 @@ function applyLanguage(isEnglish) {
   document.querySelector('meta[property="og:title"]').content = metadata.ogTitle;
   document.querySelector('meta[property="og:description"]').content = metadata.ogDescription;
   document.querySelector('meta[property="og:url"]').content = metadata.url;
+  const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+  if (twitterTitle) twitterTitle.content = metadata.ogTitle;
+  const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+  if (twitterDescription) twitterDescription.content = metadata.ogDescription;
   document.querySelector('link[rel="canonical"]').href = metadata.url;
 
   for (const { node, original } of textNodes) {
